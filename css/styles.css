@@ -38,6 +38,7 @@ body{
 .page{
     color:  var(--text-color);
     text-decoration: none;
+    font-weight: 600;
 }
 
 .list-contac{
@@ -47,9 +48,7 @@ body{
     margin: 0px;
     padding: 0px;
 }
-.elem-header{
 
-}
 .item-contac{
     display: flex;
     align-items: center;
@@ -60,10 +59,12 @@ body{
 .icon-contact{
     width: 10px;
     height: 16px;
+    fill: var(--color-svg);
 }
 .email{
     width: 16px;
     height: 12px;
+    fill: var(--color-svg);
 }
 
 .page:hover,
@@ -112,13 +113,16 @@ color: var(--accent-color);
 }
 
 .titulo{
+
     display: flex;
-    background-image: url(../images/index/img-background.png);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/img-background.jpg);
+    width: 1600px;
     height: 600px;
     padding: var(--padding-seccion);
     justify-content: center;
     align-items: center;
 }
+
 h1{
     width: 696px;
     height: 120px;
@@ -203,10 +207,27 @@ letter-spacing: 0.03em;
 color: var(--text-color);
 }
 /* ------------------------------seccion2----------------- */
-.img-secc2:hover{
-    opacity: 0.5;
-    cursor: pointer;
+.img-secc2{
+    width: 370px;
+    height: 294px;
 }
+
+.text-secc2{
+    position: relative;
+    display: flex;
+    height: 70px;
+    width: 370px;
+    margin-top: -75px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700px;
+    background: rgba(47, 48, 58, 0.8);
+   
+    
+}
+.p-secc2{
+        color: var(--white-color);
+    }
 .seccion2{
     border-left: var(--border-seccion);
     border-right: var(--border-seccion);
@@ -417,7 +438,7 @@ footer .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-svg-footer);
+    background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
     border-radius: 25px;
@@ -425,6 +446,7 @@ footer .container{
 .icon-footer{
     width: 20px;
     height: 20px;
+    fill: var(--white-color);
 }
 .icon-svg:hover{
     background-color: var(--accent-color);
